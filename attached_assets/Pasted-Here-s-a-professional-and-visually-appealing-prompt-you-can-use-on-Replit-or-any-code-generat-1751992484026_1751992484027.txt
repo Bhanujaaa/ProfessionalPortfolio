@@ -1,0 +1,70 @@
+Here’s a professional and visually appealing **prompt** you can use on **Replit (or any code generation platform)** to create a **personal AI Engineer + Software Engineer portfolio site** in **React** with animations, responsiveness, and a modern design based on your resume:
+
+---
+
+### ✅ **Prompt to Replit (or similar AI IDEs):**
+
+> **Prompt:**
+>
+> Build a professional, responsive personal portfolio website in **React** with **Tailwind CSS** for styling and **Framer Motion** for smooth animations. The site should include the following sections based on the resume of *Bhanuja Ainary*, an AI Engineer and Software Developer:
+>
+> ### ✨ Features:
+>
+> * Modern and clean UI (inspired by sites like Vercel, Stripe, or Apple's career page)
+> * Mobile responsive and animated using Framer Motion
+> * Smooth scrolling and scroll-based animations
+> * Navigation bar that highlights the current section
+> * Dark/light theme toggle
+>
+> ### 🧠 Sections:
+>
+> 1. **Hero Section**
+>
+>    * Name: *Bhanuja Ainary*
+>    * Title: AI Engineer | Software Developer
+>    * Tagline: "Building intelligent systems & scalable software"
+>    * Contact buttons (LinkedIn, GitHub, Email)
+> 2. **About Me**
+>
+>    * Brief summary: Research-driven engineer with expertise in AI, cloud, and full-stack development.
+>    * Education:
+>
+>      * M.S. in CS, University of North Texas (GPA: 4.0)
+>      * B.Tech in ECE, SASTRA University (GPA: 3.7)
+> 3. **Experience**
+>
+>    * HPCC Lab – Research Assistant (Audo-Sight, Multimodal LLMs)
+>    * University of North Texas – Teaching Assistant (CSCE 1030)
+>    * Presidio – Software Engineer (Ardent Mills & EventBuzz projects)
+>    * Technologies: React, Node.js, AWS, .NET, Azure, SQL, Redis, NeMo Guardrails
+> 4. **Projects**
+>
+>    * Audo-Sight (LLMs for BVI)
+>    * CPU Scheduling Simulator
+>    * Zhuttle – Commute App (React Native, Stripe, WebSocket)
+>    * Include GitHub links, live demos, and images/icons if possible
+> 5. **Research & Publications**
+>
+>    * Audo-Sight (link: [https://arxiv.org/pdf/2505.00153](https://arxiv.org/pdf/2505.00153))
+>    * HE2C (link: [https://arxiv.org/pdf/2411.19487](https://arxiv.org/pdf/2411.19487))
+> 6. **Certifications & Achievements**
+>
+>    * AWS Certified Solutions Architect – Associate
+>    * HackUNT (Special Award – Goldman Sachs), SMU Datathon – 2nd Place
+> 7. **Contact**
+>
+>    * Email: [ainarybhanuja@gmail.com](mailto:ainarybhanuja@gmail.com)
+>    * Phone: +1 (940) 843-8539
+>    * Form with name/email/message
+>
+> 💡 Use Tailwind CSS for layout and responsiveness. Use Framer Motion to animate transitions and section reveals. Host images and project screenshots from placeholder links.
+>
+> Include README with steps to run locally.
+
+---
+
+### 🔥 Bonus:
+
+If you'd like me to generate the **React codebase with Tailwind + Framer Motion**, I can do that too and zip it for you to upload to Replit. Just say the word.
+
+Would you like that?
