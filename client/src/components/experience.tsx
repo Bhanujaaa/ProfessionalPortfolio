@@ -25,10 +25,11 @@ const experiences = [
     icon: University,
     project: "Audo-Sight | Multimodal Large Language Models",
     achievements: [
-      "Developed Audo-Sight, improving navigation and environmental understanding by over 70%",
-      "Implemented latency-aware routing, optimizing response time by 25%",
-      "Integrated NeMo Guardrails, reducing inappropriate responses by 85%",
-      "Conducted latency benchmark on 5 LLMs with 96.4% GPU performance improvement",
+      "Developed Audo-Sight, an assistive system integrating Multimodal Large Language Models (MLLMs) for context-aware interaction and guidance for Blind and Visually Impaired (BVI), improving navigation and environmental understanding by over 70% compared to traditional white canes.",
+"Implemented latency-aware routing, optimizing response time by 25% and enabling optimal LLM selection based on task urgency.",
+"Integrated NeMo Guardrails to ensure respectful, BVI-aware, and safe language generation, reducing inappropriate or unclear responses.",
+"Utilized LangChain and quantized LLaVA to enable edge-deployable multimodal reasoning for real-time assistive interaction.",
+"Built a CNN-LSTM model to classify age brackets from speech patterns with 83% accuracy; facilitated scalable biometric analysis via spectral-temporal encoding."
     ],
   },
    {
