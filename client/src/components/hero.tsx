@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import headshot from "@/media/Bhanuja_Ainary_Headshot.jpg";
 import { Mail, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -66,7 +67,7 @@ export default function Hero() {
                 Get in Touch
               </Button>
               
-              <Button
+              {/* <Button
                 variant="outline"
                 className="border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
                 asChild
@@ -75,14 +76,14 @@ export default function Hero() {
                   <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn
                 </a>
-              </Button>
+              </Button> */}
               
               <Button
                 variant="outline"
                 className="border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
                 asChild
               >
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Bhanujaaa" target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-4 w-4" />
                   GitHub
                 </a>
@@ -104,12 +105,12 @@ export default function Hero() {
                 className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+                  src={headshot}
                   alt="Bhanuja Ainary - Professional Headshot"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
-              
+
               {/* Floating elements */}
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}

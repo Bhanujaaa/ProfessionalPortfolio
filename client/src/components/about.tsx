@@ -50,13 +50,10 @@ export default function About() {
           <motion.div variants={itemVariants}>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Professional Summary</h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Results-driven full-stack developer with 2+ years of experience building web and AI-powered applications. 
-              Proficient in React, Java, Spring Boot, Node.js, MongoDB, MySQL, Python, Flask and leveraging AWS cloud 
-              services to build scalable and cost-effective solutions.
+              AI ML Engineer with 3+ years of experience building and deploying production-grade AI systems, including LLM-powered applications and end-to-end voice agents (STT, LLM, TTS). Strong expertise in real-time inference, conversational AI, and scalable cloud deployments. AI-native full-stack developer skilled in FastAPI, Flask, Python, React, Node.js, and AWS, focused on delivering reliable, high-impact AI solutions.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Experienced in researching and working with Large Language Models (LLMs) and MLLMs for AI-driven applications. 
-              Seeking full-stack roles to drive innovative, high-impact solutions.
+             Experienced in researching, fine-tuning, and deploying Large Language Models (LLMs) and Multimodal LLMs (MLLMs), with a strong focus on system reliability, performance, and ethical AI practices. Seeking AI-focused full-stack roles to drive innovative, high-impact, real-world solutions.
             </p>
           </motion.div>
 

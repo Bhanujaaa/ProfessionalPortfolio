@@ -3,11 +3,25 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Building, University, CheckCircle } from "lucide-react";
 
 const experiences = [
+   {
+    title: "AI Engineer",
+    company: "Betwixt",
+    location: "Remote",
+    period: "September 2025 - November 2025",
+    icon: University,
+    // project: "Audo-Sight | Multimodal Large Language Models",
+    achievements: [
+      "Engineered NLP pipelines using BERT and Transformers to process clinical notes and claims data; reduced manual review volume 40% and Built scalable AI memory pipelines to transform large-scale conversational and interaction data (15TB+) into embedding-based representations stored in a vector database (FAISS-backed), enabling long-term contextual retrieval and historical summarization for ML and LLM systems, reducing end-to-end latency by 45%.",
+      "Designed an AI memory architecture combining object storage, metadata stores, and a vector similarity layer to persist, version, and retrieve complete historical context, supporting retrieval-augmented generation (RAG), agent memory, and time-aware inference.",
+      "Developed hybrid memory schemas (vector + temporal graph relationships) to model session flow, user evolution, and long-term memory, enabling similarity search, memory replay, and trajectory-based reasoning with 35% faster retrieval performance.",
+      "Implemented embedding generation, memory compaction, and re-embedding workflows to ensure downstream ML models consumed consistent, high-fidelity historical context across retraining, evaluation, and online inference."
+          ],
+  },
   {
     title: "Research Assistant",
     company: "HPCC Lab",
     location: "Denton, Texas",
-    period: "January 2024 - Present",
+    period: "August 2024 - May 2025",
     icon: University,
     project: "Audo-Sight | Multimodal Large Language Models",
     achievements: [
@@ -17,29 +31,34 @@ const experiences = [
       "Conducted latency benchmark on 5 LLMs with 96.4% GPU performance improvement",
     ],
   },
+   {
+    title: "Teaching Assistant",
+    company: "University of North Texas",
+    location: "Denton, Texas",
+    period: "January 2024 - June 2024",
+    icon: University,
+    // project: "Audo-Sight | Multimodal Large Language Models",
+    achievements: [
+      "Led and mentored 30+ cross-functional student teams in designing and implementing microservices-based web applications, leveraging Agile methodologies (Scrum, sprint planning, retrospectives).",
+"Architected end-to-end CI/CD workflows using Jenkins for automated build, test, and deployment, integrating Git for source control.",
+"Conducted in-depth code reviews and architectural assessments, guiding students on RESTful API design, modular service decomposition, database schema optimization, and DevOps best practices."
+    ],
+  },
   {
-    title: "Software Engineer",
+    title: "Data Engineer",
     company: "Presidio Cloud Solutions",
     location: "Coimbatore, India",
-    period: "January 2022 - July 2023",
+    period: "February 2022 - July 2023",
     icon: Building,
     projects: [
       {
-        name: "Ardent Mills - Client Project",
-        tech: "C#, .NET Core 8, Azure, Redis, xUnit",
         achievements: [
-          "Designed scalable REST APIs for complex pricing logic",
-          "Optimized API performance by ~80% using Redis cache",
-          "Increased test coverage by 35% using xUnit and Moq",
-        ],
-      },
-      {
-        name: "EventBuzz - Event Management",
-        tech: "React, Node.js, AWS, PostgreSQL",
-        achievements: [
-          "Led frontend development with drag-and-drop form builder",
-          "Implemented middleware for Authorization and Authentication",
-          "Designed end-to-end CI/CD pipelines using AWS",
+          "Engineered ETL and data pipelines using AWS Glue and Talend to integrate OLAP/OLTP databases, ensuring clean, reliable, and analytics-ready datasets for downstream ML and reporting systems.",
+          "Led a proof-of-concept (POC) for AWS Data Migration Service, performing both homogeneous and heterogeneous migrations, validating strategies, and ensuring zero data loss across environments.",
+          "Developed an automated AWS security audit tool to enforce cloud governance and compliance, reducing manual audit effort by 40% and ensuring adherence to AWS best practices.",
+          "Built a CI/CD code pipeline for an Event Management system in AWS, automating deployments and ensuring consistent, reliable releases.",
+          "Automated API testing using Postman scripting for 15+ endpoints, improving test coverage by 35% and accelerating regression testing.",
+          "Designed and implemented data visualization dashboards using Power BI, Tableau, and Excel Pivot Tables, enabling business teams to interpret and act on large-scale datasets quickly.",
         ],
       },
     ],
@@ -125,25 +144,26 @@ export default function Experience() {
                       </div>
 
                       {exp.project && (
-                        <>
-                          <h4 className="font-semibold text-gray-900 mb-3">{exp.project}</h4>
-                          <ul className="text-gray-600 space-y-2 text-sm">
-                            {exp.achievements?.map((achievement, i) => (
-                              <li key={i} className="flex items-start">
-                                <CheckCircle className="text-green-500 mt-1 mr-2 flex-shrink-0" size={12} />
-                                <span>{achievement}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </>
+                        <h4 className="font-semibold text-gray-900 mb-3">{exp.project}</h4>
+                      )}
+
+                      {exp.achievements && !exp.projects && (
+                        <ul className="text-gray-600 space-y-2 text-sm">
+                          {exp.achievements.map((achievement, i) => (
+                            <li key={i} className="flex items-start">
+                              <CheckCircle className="text-green-500 mt-1 mr-2 flex-shrink-0" size={12} />
+                              <span>{achievement}</span>
+                            </li>
+                          ))}
+                        </ul>
                       )}
 
                       {exp.projects && (
                         <div className="space-y-4">
                           {exp.projects.map((project, i) => (
                             <div key={i}>
-                              <h4 className="font-semibold text-gray-900 mb-2">{project.name}</h4>
-                              <p className="text-xs text-gray-500 mb-2">{project.tech}</p>
+                              {/* <h4 className="font-semibold text-gray-900 mb-2">{project.name}</h4> */}
+                              {/* <p className="text-xs text-gray-500 mb-2">{project.tech}</p> */}
                               <ul className="text-gray-600 space-y-1 text-sm">
                                 {project.achievements.map((achievement, j) => (
                                   <li key={j} className="flex items-start">

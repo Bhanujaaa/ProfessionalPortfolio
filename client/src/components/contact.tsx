@@ -87,45 +87,45 @@ export default function Contact() {
             <div className="space-y-4 mb-8">
               <div className="flex items-center group">
                 <Mail className="text-primary text-xl mr-4 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-700">ainarybhanuja@gmail.com</span>
+                <span className="text-gray-700">bhanuja1122@gmail.com</span>
               </div>
               <div className="flex items-center group">
                 <Phone className="text-primary text-xl mr-4 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-700">+1 (940) 843-8539</span>
+                <span className="text-gray-700">+91 9959933552</span>
               </div>
               <div className="flex items-center group">
                 <MapPin className="text-primary text-xl mr-4 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-700">Denton, Texas</span>
+                <span className="text-gray-700">Tirupati, India</span>
               </div>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow Me</h4>
               <div className="flex space-x-4">
-                <motion.a
+                {/* <motion.a
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   href="#"
                   className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
-                >
-                  <Linkedin size={20} />
-                </motion.a>
+                > */}
+                  {/* <Linkedin size={20} /> */}
+                {/* </motion.a> */}
                 <motion.a
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  href="#"
+                  href="https://github.com/Bhanujaaa"
                   className="w-10 h-10 bg-gray-700 text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors"
                 >
                   <Github size={20} />
                 </motion.a>
-                <motion.a
+                {/* <motion.a
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   href="#"
                   className="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"
-                >
-                  <Twitter size={20} />
-                </motion.a>
+                > */}
+                  {/* <Twitter size={20} /> */}
+                {/* </motion.a> */}
               </div>
             </div>
           </motion.div>
